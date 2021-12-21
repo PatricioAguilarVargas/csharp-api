@@ -3,4 +3,5 @@ BikeStoresApi/obj
 BikeStoresApi/appsettings.json
 BikeStoresApi/.vs
 BikeStoresApi/.config
-BikeStoresApi/Properties/
+BikeStoresApi/Properties
+BikeStoresApi/nlog.config
