@@ -1,0 +1,27 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Error",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "BikeStores": "Server=IpServer;Database=DataBaseName;User Id=UserLogin;Password=PassLogin"
+  },
+  "Jwt": {
+    "Key": "SecretKey",
+    "Issuer": "BikeStoreAuthenticationServer",
+    "Audience": "BikeStoreServiceClient",
+    "subject": "BikeStoreServiceAccessToken"
+  },
+  "Swagger": {
+    "JsonRoute": "swagger/{documentName}/swagger.json",
+    "Description": "Bike Store Api V1",
+    "UIEndpoint": "/swagger.json",
+    "Version": "v1",
+    "Xml": "BikeStoresApi.xml",
+    "Title": "Bike Store Api"
+  }
+}

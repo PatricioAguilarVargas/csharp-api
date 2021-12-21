@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BikeStoresApi</name>
+    </assembly>
+    <members>
+        <member name="T:BikeStoresApi.Controllers.BrandsController">
+            <summary>
+            acciones relacionadas con las marcas
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.BrandsController.GetBrands" -->
+        <member name="M:BikeStoresApi.Controllers.BrandsController.GetBrand(System.Int32)">
+            <summary>
+            lista una marca
+            </summary>
+            <param name="id">id marca</param>
+            <returns>Brand</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.BrandsController.PutBrand(System.Int32,BikeStoresApi.Models.Entities.Brand)">
+            <summary>
+            modifica una marca
+            </summary>
+            <param name="id">id de lamarca</param>
+            <param name="brand">JSON Brand</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.BrandsController.PostBrand(BikeStoresApi.Models.Entities.Brand)">
+            <summary>
+            agrega una marca
+            </summary>
+            <param name="brand">JSON Brand</param>
+            <remarks>no se agrega el id</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.BrandsController.DeleteBrand(System.Int32)">
+            <summary>
+            alimina una marca
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.CategoriesController">
+            <summary>
+            acciones relacionadas con la categorias
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.CategoriesController.GetCategories" -->
+        <member name="M:BikeStoresApi.Controllers.CategoriesController.GetCategory(System.Int32)">
+            <summary>
+            lista una categoria
+            </summary>
+            <param name="id">id categoria</param>
+            <returns>Category</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.CategoriesController.PutCategory(System.Int32,BikeStoresApi.Models.Entities.Category)">
+            <summary>
+            modifica una categoria
+            </summary>
+            <param name="id">id categoria</param>
+            <param name="category">JSON Category</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.CategoriesController.PostCategory(BikeStoresApi.Models.Entities.Category)">
+            <summary>
+            agrega una categoria
+            </summary>
+            <param name="category">JSON Category</param>
+            <remarks>no se agrega el id</remarks>
+            <returns>Category</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.CategoriesController.DeleteCategory(System.Int32)">
+            <summary>
+            alimina una categoria
+            </summary>
+            <param name="id">id categoria</param>
+            <returns></returns>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.CustomersController">
+            <summary>
+            acciones relacionadas con los clientes
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.CustomersController.GetCustomers" -->
+        <member name="M:BikeStoresApi.Controllers.CustomersController.GetCustomer(System.Int32)">
+            <summary>
+            lista un cliente
+            </summary>
+            <param name="id">id del cliente</param>
+            <returns>Customer</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.CustomersController.PutCustomer(System.Int32,BikeStoresApi.Models.Entities.Customer)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="customer">JSON Customer</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.CustomersController.PostCustomer(BikeStoresApi.Models.Entities.Customer)">
+            <summary>
+            agrega u cliente
+            </summary>
+            <param name="customer">JSON Customer</param>
+            <remarks>no se agrega el id</remarks>
+            <returns>Customer</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.CustomersController.DeleteCustomer(System.Int32)">
+            <summary>
+            elimina un cliente
+            </summary>
+            <param name="id">id de cliente</param>
+            <returns></returns>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.OrderItemsController">
+            <summary>
+            acciones relacionada con productos de una orden
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.OrderItemsController.GetOrderItems" -->
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.OrderItemsController.GetOrderItem(System.Int32)" -->
+        <member name="M:BikeStoresApi.Controllers.OrderItemsController.GetOrderItem(System.Int32,System.Int32)">
+            <summary>
+            entrega una item de una orden
+            </summary>
+            <param name="orderId">id de la orden</param>
+            <param name="itemId">id del item</param>
+            <returns>OrderItem</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.OrderItemsController.PutOrderItem(System.Int32,System.Int32,BikeStoresApi.Models.Entities.OrderItem)">
+            <summary>
+            modifica un item de una orden
+            </summary>
+            <param name="orderId">id de la orden</param>
+            <param name="itemId">id del item</param>
+            <param name="orderItem">JSON OrderItem</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.OrderItemsController.PostOrderItem(BikeStoresApi.Models.Entities.OrderItem)">
+            <summary>
+            agrega un item a una orden
+            </summary>
+            <param name="orderItem">JSON OrderItem</param>
+            
+            <returns>OrderItem</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.OrderItemsController.DeleteOrderItem(System.Int32,System.Int32)">
+            <summary>
+            borra una item de una orden
+            </summary>
+            <param name="orderId">id de la orden</param>
+            <param name="itemId">id del item</param>
+            <returns></returns>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.OrdersController">
+            <summary>
+            acciones de las ordenes
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.OrdersController.GetOrders" -->
+        <member name="M:BikeStoresApi.Controllers.OrdersController.GetOrder(System.Int32)">
+            <summary>
+            lista una orden segun su id
+            </summary>
+            <param name="id">id de orden</param>
+            <returns>Order</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.OrdersController.PutOrder(System.Int32,BikeStoresApi.Models.Entities.Order)">
+            <summary>
+            modifica una orden
+            </summary>
+            <param name="id">id de orden</param>
+            <param name="order">JSON Order</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.OrdersController.PostOrder(BikeStoresApi.Models.Entities.Order)">
+            <summary>
+            agrega una orden
+            </summary>
+            <param name="order">JSON Order</param>
+            <remarks>no se agrega el id</remarks>
+            <returns>Order</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.OrdersController.DeleteOrder(System.Int32)">
+            <summary>
+            elimina una orden
+            </summary>
+            <param name="id">id de orden</param>
+            <returns></returns>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.ProductsController">
+            <summary>
+            acciones de los productos
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.ProductsController.GetProducts" -->
+        <member name="M:BikeStoresApi.Controllers.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            lista un producto
+            </summary>
+            <param name="id">id producto</param>
+            <returns>Product</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.ProductsController.PutProduct(System.Int32,BikeStoresApi.Models.Entities.Product)">
+            <summary>
+            modifica un producto
+            </summary>
+            <param name="id"></param>
+            <param name="product">JSON Product</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.ProductsController.PostProduct(BikeStoresApi.Models.Entities.Product)">
+            <summary>
+            agrega un producto
+            </summary>
+            <param name="product">JSON Product</param>
+            <remarks>no se agrega el id</remarks>
+            <returns>Product</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            elimina un producto
+            </summary>
+            <param name="id">id producto</param>
+            <returns></returns>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.StaffsController">
+            <summary>
+            acciones del personal
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.StaffsController.GetStaffs" -->
+        <member name="M:BikeStoresApi.Controllers.StaffsController.GetStaff(System.Int32)">
+            <summary>
+            lista a un trabajador por su id
+            </summary>
+            <param name="id">id de personal</param>
+            <returns>Staff</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StaffsController.PutStaff(System.Int32,BikeStoresApi.Models.Entities.Staff)">
+            <summary>
+            modifica a un trabajador
+            </summary>
+            <param name="id">id del personal</param>
+            <param name="staff">JSON Staff</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StaffsController.PostStaff(BikeStoresApi.Models.Entities.Staff)">
+            <summary>
+            agrega a un trabajador
+            </summary>
+            <param name="staff">JSON Staff</param>
+            <remarks>no se agrega el id</remarks>
+            <returns>Staff</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StaffsController.DeleteStaff(System.Int32)">
+            <summary>
+            borra a un trabajador
+            </summary>
+            <param name="id">id de personal</param>
+            <returns></returns>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.StocksController">
+            <summary>
+            acciones de Stock
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.StocksController.GetStocks" -->
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.StocksController.GetStock(System.Int32)" -->
+        <member name="M:BikeStoresApi.Controllers.StocksController.GetStock(System.Int32,System.Int32)">
+            <summary>
+            lista el stock de un producto correspondiente a una tienda
+            </summary>
+            <param name="storeId">id de tienda</param>
+            <param name="productId">id del producto</param>
+            <returns>Stock</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StocksController.PutStock(System.Int32,System.Int32,BikeStoresApi.Models.Entities.Stock)">
+            <summary>
+            modifica un stock
+            </summary>
+            <param name="storeId">id de tienda</param>
+            <param name="productId">id del producto</param>
+            <param name="stock">JSON Stock</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StocksController.PostStock(BikeStoresApi.Models.Entities.Stock)">
+            <summary>
+            agrega un stock
+            </summary>
+            <param name="stock">JSON Stock</param>
+            <returns>Stock</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StocksController.DeleteStock(System.Int32,System.Int32)">
+            <summary>
+            elimina un stock
+            </summary>
+            <param name="storeId">id de tienda</param>
+            <param name="productId">id producto</param>
+            <returns></returns>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.StoresController">
+            <summary>
+            acciones sobre las tiendas
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.StoresController.GetStores" -->
+        <member name="M:BikeStoresApi.Controllers.StoresController.GetStore(System.Int32)">
+            <summary>
+            obtiene una tienda
+            </summary>
+            <param name="id">id de la tienda</param>
+            <returns>Store</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StoresController.PutStore(System.Int32,BikeStoresApi.Models.Entities.Store)">
+            <summary>
+            modifica una tienda
+            </summary>
+            <param name="id">id de latienda</param>
+            <param name="store">JSON Store</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StoresController.PostStore(BikeStoresApi.Models.Entities.Store)">
+            <summary>
+            modifica una tienda
+            </summary>
+            <param name="store">JSON Store</param>
+            <remarks>no se agrega el id</remarks>
+            <returns>Store</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.StoresController.DeleteStore(System.Int32)">
+            <summary>
+            borra una tienda
+            </summary>
+            <param name="id">id de la tienda</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.TokenController.Post(BikeStoresApi.Models.Entities.UserInfo)">
+             <summary>
+             entrega un token valido
+             </summary>
+             <remarks>
+             usuario valido
+             {
+                "userId": 1,
+                "firstName": "BikeStore",
+                "lastName": "Admin",
+                "userName": "BikeStoreAdmin",
+                "email": "BikeStoreAdmin@abc.com",
+                "password": "$admin@1985",
+                "createdDate": "2021-12-13T14:18:34.16"
+            }
+             </remarks>
+        </member>
+        <member name="T:BikeStoresApi.Controllers.UsersInfoController">
+            <summary>
+            acciones de usuarios de sistema
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BikeStoresApi.Controllers.UsersInfoController.GetUserInfos" -->
+        <member name="M:BikeStoresApi.Controllers.UsersInfoController.GetUserInfo(System.Int32)">
+            <summary>
+            obtiene un usuario segun id
+            </summary>
+            <param name="id"></param>
+            <returns>UserInfo</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.UsersInfoController.PutUserInfo(System.Int32,BikeStoresApi.Models.Entities.UserInfo)">
+            <summary>
+            modifica un usuario
+            </summary>
+            <param name="id">id del usuario</param>
+            <param name="userInfo">JSON UserInfo</param>
+            <returns></returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.UsersInfoController.PostUserInfo(BikeStoresApi.Models.Entities.UserInfo)">
+            <summary>
+            agrega un usuario 
+            </summary>
+            <param name="userInfo">JSON UserInfo</param>
+            <remarks>no se agrega el id</remarks>
+            <returns>UserInfo</returns>
+        </member>
+        <member name="M:BikeStoresApi.Controllers.UsersInfoController.DeleteUserInfo(System.Int32)">
+            <summary>
+            borra un usuario
+            </summary>
+            <param name="id">id de usuario</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2 @@
+﻿//Generar modelo desde la base de datos
+Scaffold-DbContext "Server=serverIpAddress;Database=testdb;User Id=testdb;Password=actualPassword" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

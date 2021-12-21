@@ -1,0 +1,2345 @@
+{
+	"info": {
+		"_postman_id": "ff421a9f-49ce-42b0-b424-dca2a38d8dc9",
+		"name": "BikeStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Brands",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Brands",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Brands/1",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Brands",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Brands",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brandId\": 11,\r\n    \"brandName\": \"Change\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Brands/11",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Brands",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"brandId\":10,\"brandName\":\"Bianchi\",\"products\":[]}\r\n"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Brands/11",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Brands",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Categories",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 1,\r\n    \"categoryName\": \"Children Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Categories/1",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryName\": \"Cross Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Categories",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 9,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Categories/9",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Categories",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Categories/9",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Categories",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Custumers",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Customers",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Customers/1445",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customers",
+								"1445"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"First\",\r\n    \"lastName\": \"Last\",\r\n    \"phone\": \"963963963\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"street\": \"671 Miles Court \",\r\n    \"city\": \"San Lorenzo\",\r\n    \"state\": \"CA\",\r\n    \"zipCode\": \"94580\",\r\n    \"orders\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Customers",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerId\": 1446,\r\n    \"firstName\": \"First test\",\r\n    \"lastName\": \"Last test\",\r\n    \"phone\": \"0\",\r\n    \"email\": \"test2@gmail.com\",\r\n    \"street\": \"671 Miles Court \",\r\n    \"city\": \"San Lorenzo\",\r\n    \"state\": \"CA\",\r\n    \"zipCode\": \"94580\",\r\n    \"orders\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Customers/1446",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customers",
+								"1446"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Customers/1446",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customers",
+								"1446"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Orders",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Orders/1615",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Orders",
+								"1615"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerId\": 136,\r\n    \"orderStatus\": 3,\r\n    \"orderDate\": \"2021-12-28T00:00:00\",\r\n    \"requiredDate\": \"2021-12-28T00:00:00\",\r\n    \"shippedDate\": null,\r\n    \"storeId\": 3,\r\n    \"staffId\": 8,\r\n    \"customer\": null,\r\n    \"staff\": null,\r\n    \"store\": null,\r\n    \"orderItems\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Orders",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 1616,\r\n    \"customerId\": 135,\r\n    \"orderStatus\": 3,\r\n    \"orderDate\": \"2021-12-31T00:00:00\",\r\n    \"requiredDate\": \"2021-12-31T00:00:00\",\r\n    \"shippedDate\": null,\r\n    \"storeId\": 3,\r\n    \"staffId\": 8,\r\n    \"customer\": null,\r\n    \"staff\": null,\r\n    \"store\": null,\r\n    \"orderItems\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Orders/1616",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Orders",
+								"1616"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Orders/1616",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Orders",
+								"1616"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OrderItems",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/OrderItems",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"OrderItems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByOrderId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/OrderItems/1",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"OrderItems",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByOrderAndItemId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/OrderItems/1/2",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"OrderItems",
+								"1",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 1,\r\n    \"productId\": 11,\r\n    \"quantity\": 1,\r\n    \"listPrice\": 2199.99,\r\n    \"discount\": 0.08,\r\n    \"order\": null,\r\n    \"product\": null\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/OrderItems",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"OrderItems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": 1,\r\n    \"itemId\": 6,\r\n    \"productId\": 11,\r\n    \"quantity\": 1,\r\n    \"listPrice\": 2399.99,\r\n    \"discount\": 0.05,\r\n    \"order\": null,\r\n    \"product\": null\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/OrderItems/1/6",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"OrderItems",
+								"1",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/OrderItems/1/6",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"OrderItems",
+								"1",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Products",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Products/321",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Products",
+								"321"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Trek Checkpoint ALR Frameset - 2021\",\r\n    \"brandId\": 5,\r\n    \"categoryId\": 3,\r\n    \"modelYear\": 2021,\r\n    \"listPrice\": 3399.99,\r\n    \"brand\": null,\r\n    \"category\": null,\r\n    \"orderItems\": [],\r\n    \"stocks\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Products",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 322,\r\n    \"productName\": \"Trek Checkpoint ALR Frameset - 2022\",\r\n    \"brandId\": 5,\r\n    \"categoryId\": 3,\r\n    \"modelYear\": 2022,\r\n    \"listPrice\": 3599.99,\r\n    \"brand\": null,\r\n    \"category\": null,\r\n    \"orderItems\": [],\r\n    \"stocks\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Products/322",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Products",
+								"322"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Products/322",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Products",
+								"322"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Staffs",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Staffs",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Staffs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Staffs/3",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Staffs",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Maria\",\r\n    \"lastName\": \"SAltamirano\",\r\n    \"email\": \"maria.altamirano@bikes.shop\",\r\n    \"phone\": \"(831) 555-5557\",\r\n    \"active\": 2,\r\n    \"storeId\": 1,\r\n    \"managerId\": 7,\r\n    \"manager\": null,\r\n    \"store\": null,\r\n    \"inverseManager\": [],\r\n    \"orders\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Staffs",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Staffs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"staffId\": 11,\r\n    \"firstName\": \"Maria\",\r\n    \"lastName\": \"Altamirano\",\r\n    \"email\": \"maria.altamirano@bikes.shop\",\r\n    \"phone\": \"(831) 555-5558\",\r\n    \"active\": 2,\r\n    \"storeId\": 1,\r\n    \"managerId\": 7,\r\n    \"manager\": null,\r\n    \"store\": null,\r\n    \"inverseManager\": [],\r\n    \"orders\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Staffs/11",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Staffs",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Staffs/11",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Staffs",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stocks",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stocks",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stocks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByStoreId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stocks/1",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stocks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByStoreAndProductId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stocks/1/1",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stocks",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Maria\",\r\n    \"lastName\": \"SAltamirano\",\r\n    \"email\": \"maria.altamirano@bikes.shop\",\r\n    \"phone\": \"(831) 555-5557\",\r\n    \"active\": 2,\r\n    \"storeId\": 1,\r\n    \"managerId\": 7,\r\n    \"manager\": null,\r\n    \"store\": null,\r\n    \"inverseManager\": [],\r\n    \"orders\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stocks",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stocks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"staffId\": 11,\r\n    \"firstName\": \"Maria\",\r\n    \"lastName\": \"Altamirano\",\r\n    \"email\": \"maria.altamirano@bikes.shop\",\r\n    \"phone\": \"(831) 555-5558\",\r\n    \"active\": 2,\r\n    \"storeId\": 1,\r\n    \"managerId\": 7,\r\n    \"manager\": null,\r\n    \"store\": null,\r\n    \"inverseManager\": [],\r\n    \"orders\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stocks/11",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stocks",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stocks/11",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stocks",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stores",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stores",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stores/1",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"storeName\": \"Santiago Bikes\",\r\n    \"phone\": \"(831) 476-4355\",\r\n    \"email\": \"santiago@bikes.shop\",\r\n    \"street\": \"3700 Portola Drive\",\r\n    \"city\": \"Santa Cruz\",\r\n    \"state\": \"CA\",\r\n    \"zipCode\": \"95060\",\r\n    \"orders\": [],\r\n    \"stocks\": [],\r\n    \"staff\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stores",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"storeId\": 4,\r\n    \"storeName\": \"Santiago Bikes\",\r\n    \"phone\": \"(831) 476-9999\",\r\n    \"email\": \"santiago@bikes.shop\",\r\n    \"street\": \"madrid 356\",\r\n    \"city\": \"Santiago\",\r\n    \"state\": \"CA\",\r\n    \"zipCode\": \"95060\",\r\n    \"orders\": [],\r\n    \"stocks\": [],\r\n    \"staff\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stores/4",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stores",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/Stores/4",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"Stores",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UsersInfo",
+			"item": [
+				{
+					"name": "Gets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/UsersInfo",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"UsersInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brandName\": \"Test\",\r\n        \"products\": []\r\n    }"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/UsersInfo/1",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"UsersInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"SantiagoBikeStore\",\r\n    \"lastName\": \"AdminSantiago\",\r\n    \"userName\": \"BikeStoreSantiagoAdmin\",\r\n    \"email\": \"BikeStoreAdminSantiago@abc.com\",\r\n    \"password\": \"$admin@1985\"\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/UsersInfo",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"UsersInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 2,\r\n    \"firstName\": \"SantiagoBikeStore\",\r\n    \"lastName\": \"AdminSantiago\",\r\n    \"userName\": \"BikeStoreSantiagoAdmin\",\r\n    \"email\": \"BikeStoreAdminSantiago@abc.com\",\r\n    \"password\": \"$admin@2000\",\r\n    \"createdDate\": \"2021-12-16T11:47:36.3\"\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/UsersInfo/2",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"UsersInfo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCaWtlU3RvcmVTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNmZmZGY2My0wZWY1LTQ1OTQtYmFiZS1iMjIwZDY1MzAwNjYiLCJpYXQiOiIxMi8yMS8yMDIxIDQ6NDE6MzMgUE0iLCJJZCI6IjEiLCJGaXJzdE5hbWUiOiJCaWtlU3RvcmUiLCJMYXN0TmFtZSI6IkFkbWluIiwiVXNlck5hbWUiOiJCaWtlU3RvcmVBZG1pbiIsIkVtYWlsIjoiQmlrZVN0b3JlQWRtaW5AYWJjLmNvbSIsImV4cCI6MTY0MDE5MTI5MywiaXNzIjoiQmlrZVN0b3JlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJCaWtlU3RvcmVTZXJ2aWNlQ2xpZW50In0.2d30rqQh-x48E9Rs-BWouGWO71EqOe8PZ-sBZrXv2q8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 8,\r\n    \"categoryName\": \"Cross Asult Bicycles\",\r\n    \"products\": []\r\n}"
+						},
+						"url": {
+							"raw": "http://www.patricioaguilarv.somee.com/api/UsersInfo/2",
+							"protocol": "http",
+							"host": [
+								"www",
+								"patricioaguilarv",
+								"somee",
+								"com"
+							],
+							"path": [
+								"api",
+								"UsersInfo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetToken",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"userId\": 1, \"firstName\": \"BikeStore\", \"lastName\": \"Admin\", \"userName\": \"BikeStoreAdmin\", \"email\": \"BikeStoreAdmin@abc.com\", \"password\": \"$admin@1985\", \"createdDate\": \"2021-12-13T14:18:34.16\" }"
+				},
+				"url": {
+					"raw": "http://www.patricioaguilarv.somee.com/api/Token",
+					"protocol": "http",
+					"host": [
+						"www",
+						"patricioaguilarv",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
